@@ -40,7 +40,7 @@
     --font-sans: var(--font-ui);
 
     /* Codex code font */
-    --font-mono: "Codex Code", "JetBrainsMono NFM", "JetBrains Mono", "Menlo", "Monaco", "Consolas", monospace;
+    --font-mono: "Styrene B", sans-serif;
 }
 
 /* --- VS Code Dark+ Syntax Highlighting --- */
@@ -604,4 +604,45 @@ code,
 .cm-s-inner .CodeMirror-line,
 .cm-s-inner .CodeMirror-code {
     font-family: var(--font-mono) !important;
+}
+
+#write .md-math-block {
+    --rawblock-edit-panel-bd: #242321;
+}
+
+#write .md-math-block .md-rawblock-input {
+    background-color: #242321 !important;
+    color: var(--text-primary);
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px var(--border-color);
+}
+
+#write .md-math-block .md-rawblock-input .CodeMirror {
+    background-color: transparent !important;
+    color: var(--text-primary);
+}
+
+#write .md-math-block .CodeMirror-gutters {
+    background-color: transparent !important;
+    border-right-color: var(--border-color);
+}
+
+#write .md-math-block .CodeMirror-linenumber,
+#write .md-math-block .md-rawblock-before,
+#write .md-math-block .md-rawblock-after {
+    color: var(--text-secondary);
+}
+
+#write .md-math-block .CodeMirror-cursor {
+    border-left-color: var(--accent-color) !important;
+}
+
+#write .md-math-block .md-rawblock-tooltip {
+    background-color: #242321 !important;
+    color: var(--text-secondary);
+    border-radius: 4px 4px 0 0;
+}
+
+#write .md-inline-math script {
+    color: #bb86fc;
 }
